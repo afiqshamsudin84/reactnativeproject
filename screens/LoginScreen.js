@@ -13,7 +13,7 @@ const LoginScreen = ({ navigation }) => {
       await signInWithEmailAndPassword(auth, email, password);
       navigation.navigate('Home');
     } catch (error) {
-      Alert.alert('Error', 'Wrong email or password!');
+      alert('Wrong email or password!');
     }
   };
 
