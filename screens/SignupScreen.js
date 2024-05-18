@@ -11,10 +11,10 @@ const SignupScreen = ({ navigation }) => {
   const handleSignup = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      Alert.alert("Success", "Account created successfully. Please log in.");
+      alert("Success!! Account created successfully. You will be directed to Home screen.");
       navigation.navigate('Login');
     } catch (error) {
-      Alert.alert("Something went wrong.", error.message);
+      alert("Something went wrong.");
     }
   };
 
